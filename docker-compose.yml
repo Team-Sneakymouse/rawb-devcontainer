@@ -1,5 +1,6 @@
 services:
   devcontainer:
+    container_name: rawb-devcontainer
     image: rawb-devcontainer:local
     build:
       context: .

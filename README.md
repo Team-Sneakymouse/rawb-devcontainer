@@ -12,6 +12,8 @@ The container bind-mounts this host directory:
 at `/workspace/old-dev`. The container user is `pelican` with UID and GID 988,
 matching Pelican's ownership of the server files.
 
+Docker Compose creates the container with the fixed name `rawb-devcontainer`.
+
 ## Open the devcontainer
 
 Clone this repository on the Minecraft server and open it in a devcontainer.
