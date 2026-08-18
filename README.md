@@ -49,3 +49,7 @@ Set `RAWB_SSH_PORT` to use a different host port. Password authentication,
 keyboard-interactive authentication, and root login are disabled. The server's
 SSH host key is stored in a named Docker volume so it remains stable across
 image updates and container recreation.
+
+Files saved under `/home/pelican/persistent` are stored in a separate named
+Docker volume and survive image rebuilds and container recreation. The startup
+script ensures that directory is writable by the `pelican` user.

@@ -15,7 +15,11 @@ services:
       - type: volume
         source: ssh-host-keys
         target: /etc/ssh/host-keys
+      - type: volume
+        source: pelican-persistent
+        target: /home/pelican/persistent
     working_dir: /home/pelican/old-dev
 
 volumes:
   ssh-host-keys:
+  pelican-persistent:
