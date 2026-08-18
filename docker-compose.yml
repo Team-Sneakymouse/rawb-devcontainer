@@ -11,11 +11,11 @@ services:
     volumes:
       - type: bind
         source: /docker/pelican/mounts/old-dev/plugins/MagicSpells
-        target: /workspace/old-dev
+        target: /home/pelican/old-dev
       - type: volume
         source: ssh-host-keys
         target: /etc/ssh/host-keys
-    working_dir: /workspace/old-dev
+    working_dir: /home/pelican/old-dev
 
 volumes:
   ssh-host-keys:
