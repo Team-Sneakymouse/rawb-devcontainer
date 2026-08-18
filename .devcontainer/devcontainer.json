@@ -1,0 +1,22 @@
+{
+  "name": "RAWB MagicSpells configuration",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace/old-dev",
+  "remoteUser": "pelican",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.vscode-yaml"
+      ],
+      "settings": {
+        "files.associations": {
+          "*.yml": "yaml",
+          "*.yaml": "yaml"
+        },
+        "editor.formatOnSave": true
+      }
+    }
+  }
+}
