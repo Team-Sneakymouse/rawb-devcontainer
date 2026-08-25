@@ -10,6 +10,9 @@ services:
       - "${RAWB_SSH_PORT:-2255}:22"
     volumes:
       - type: bind
+        source: /docker/pelican/mounts/dev-main/plugins/MagicSpells
+        target: /home/pelican/dev-main
+      - type: bind
         source: /docker/pelican/mounts/old-dev/plugins/MagicSpells
         target: /home/pelican/old-dev
       - type: volume
