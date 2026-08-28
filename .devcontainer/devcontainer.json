@@ -2,7 +2,7 @@
   "name": "RAWB MagicSpells configuration",
   "dockerComposeFile": "../docker-compose.yml",
   "service": "devcontainer",
-  "workspaceFolder": "/workspace/old-dev",
+  "workspaceFolder": "/home/pelican/dev-main",
   "remoteUser": "pelican",
   "shutdownAction": "stopCompose",
   "customizations": {

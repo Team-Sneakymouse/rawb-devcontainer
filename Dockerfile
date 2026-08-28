@@ -28,7 +28,7 @@ RUN find /tmp/rawb-ssh-keys -type f -name '*.pub' -exec cat {} + > "/home/${USER
 COPY docker-entrypoint.sh /usr/local/bin/rawb-entrypoint
 RUN chmod 0755 /usr/local/bin/rawb-entrypoint
 
-WORKDIR /workspace/old-dev
+WORKDIR /home/${USERNAME}
 
 EXPOSE 22
 ENTRYPOINT ["/usr/local/bin/rawb-entrypoint"]

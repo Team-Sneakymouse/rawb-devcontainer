@@ -1,15 +1,15 @@
 # RAWB devcontainer
 
 Development container for editing the MagicSpells YAML configuration of the
-`old-dev` Minecraft server.
+Lords of Minecraft server.
 
 The container bind-mounts this host directory:
 
 ```text
-/docker/pelican/mounts/old-dev/plugins/MagicSpells
+/docker/pelican/mounts/dev-main/plugins/MagicSpells
 ```
 
-at `/workspace/old-dev`. The container user is `pelican` with UID and GID 988,
+at `/home/pelican/dev-main`. The container user is `pelican` with UID and GID 988,
 matching Pelican's ownership of the server files.
 
 Docker Compose creates the container with the fixed name `rawb-devcontainer`.
