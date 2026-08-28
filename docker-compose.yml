@@ -9,19 +9,15 @@ services:
     ports:
       - "${RAWB_SSH_PORT:-2255}:22"
     volumes:
-      - type: bind
-        source: /docker/pelican/mounts/dev-main/plugins/MagicSpells
-        target: /home/pelican/dev-main
-      - type: bind
-        source: /docker/pelican/mounts/old-dev/plugins/MagicSpells
-        target: /home/pelican/old-dev
       - type: volume
         source: ssh-host-keys
         target: /etc/ssh/host-keys
       - type: volume
         source: pelican-persistent
         target: /home/pelican/persistent
-    working_dir: /home/pelican/old-dev
+      - type: bind
+        source: /docker/pelican/mounts/dev-main/plugins/MagicSpells
+        target: /home/pelican/dev-main
 
 volumes:
   ssh-host-keys:
